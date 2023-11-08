@@ -141,7 +141,23 @@ footer {
 }
 
 #lightbox2 {
-       background-image: url(../images/Jotaro_LB_Bg.png);
+       background-image: url(../images/Joseph_LB_Bg.png);
+}
+
+#lightbox3 {
+        background-image: url(../images/Jotaro_LB_Bg.png);
+}
+
+#lightbox4 {
+    background-image: url(../images/Josuke_LB_Bg.png);
+}
+
+#lightbox5 {
+    background-image: url(../images/Giorno_LB_Bg.png);
+}
+
+#lightbox6 {
+    background-image: url(../images/Jolyne_LB_Bg.png);
 }
 
 .lightbox_close {
