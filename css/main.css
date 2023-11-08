@@ -132,7 +132,7 @@ footer {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.85);
-    background-image: url(../images/Cap_LB_Bg.png);
+    background-image: url(../images/Jonthan_LB_Bg.png);
     background-repeat: no-repeat;
     background-size: 55vh;
     background-position: 40px bottom;
@@ -141,7 +141,7 @@ footer {
 }
 
 #lightbox2 {
-       background-image: url(../images/Thor_LB_Bg.png);
+       background-image: url(../images/Jotaro_LB_Bg.png);
 }
 
 .lightbox_close {
