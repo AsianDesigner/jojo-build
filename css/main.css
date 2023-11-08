@@ -51,6 +51,7 @@ header {
 
 .characters li a {
     text-decoration: none;
+    color: white;
 }
 
 .characters li:hover {
