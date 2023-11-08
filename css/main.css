@@ -1,0 +1,214 @@
+html, body {
+    height: 3%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+/* main header rules */
+
+header {
+    background-color: rgb(33,25,255);
+    padding: 10px 0px;  
+}
+
+#main-logo {
+    width: 300px;
+    display: block;
+    margin: 0px auto;
+}
+
+#character_nav {
+    background-color: #675050;
+    background-image: url('../images/jojo_character_mass_01.jpg');
+    background-blend-mode: hard-light;
+}
+
+.characters {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.characters li {
+    height: 220px;
+    margin: 10px 8px;
+    background-color: black;
+    text-align: left;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+    box-shadow: 0 155px 0 0 rgb(33,25,255) inset;
+}
+
+.characters li a {
+    text-decoration: none;
+}
+
+.characters li:hover {
+    box-shadow: 0 220px 0 0 rgb(33,25,255) inset;
+}
+
+article, #instructions {
+    padding: 20px;
+}
+
+article h3, #instructions h3 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+article p, #instructions p {
+    width: 80%;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+
+/*---Sprite---*/
+
+.sprite {
+    width: 150px;
+    height: 150px;
+    background-image: url('../images/jojoSprites.jpg');
+
+}
+
+
+#joseph {
+    background-position: -150px 0;  
+}
+
+#jotaro {
+    background-position: -300px 0;
+}
+
+#josuke {
+    background-position: -450px 0;
+}
+
+#giorno {
+    background-position: -600px 0;
+}
+
+#jolyne {
+    background-position: -750px 0;
+}
+
+#jonathan:hover, #joseph:hover, #jotaro:hover, #josuke:hover, #giorno:hover, #jolyne:hover {
+    background-position-y: -150px;
+}
+
+/*---Footer Rules---*/
+footer {
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.stickyfooter {
+    position: sticky;
+    top: 100%;
+    height: 80px;
+    background-color: rgb(40, 37, 37);
+}
+
+.lightbox {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    background-image: url(../images/Cap_LB_Bg.png);
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 40px bottom;
+    z-index: 5000; /* ya this is crazy, better safe than sorry */
+    display: none;
+}
+
+#lightbox2 {
+       background-image: url(../images/Thor_LB_Bg.png);
+}
+
+.lightbox_close {
+    position: relative;
+    top: 20px;
+    left: 95%;
+    color: white;
+    font-size: 48px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.lightbox_close:hover {
+    opacity: 0.5;
+    color: red;
+}
+
+.lightbox article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+}
+
+.lb_text, .lb_heading {
+    text-align: left;
+}
+
+.lb_text {
+    margin-left: 0;
+    padding-top: 32px;
+    line-height: 1.6 !important;
+}
+
+.lightbox:target {
+    display: block;
+}
+
+/*---Flex Box
+display, flex-direction, justify-content, align-items
+
+Container(parent) & items(children)
+
+flip the entire websiite using axis
+
+Block, behaves as expected taking up 100% of the inline space only taking up
+what is needed
+
+display: inline flex
+
+flex-direction: row, row-reverse, column, column reverse
+
+align-items (makes everything the same height)
+
+align-items: flex-start, flex-end, center, baseline, stretch
+(and then add height)
+
+justify-content: space-evenly
+(so even when you add more containers it automatically evens out the space)
+
+mdn css transitions
+
+Background Blend Mode
+Blends Modes: Normal, Multiply (darkens), Screen (lightens colors)
+
+background-blend-mode: multiple;
+
+background-size: cover; (scales image, preserving ratio, the image is cropped)
+
+Lightbox includes a close button
+
+---*/
